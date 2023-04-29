@@ -1,0 +1,590 @@
+#profil{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin-left: 4cm;
+  }
+  
+  
+  
+  
+  
+  /*profil*/
+  
+  .profil{
+    justify-content: center;
+    align-items: center;
+   
+  }
+  
+  
+  .container-profil{
+    margin-top: 10px;
+    
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+  }
+  
+  .card1-profil{
+      position: relative;
+      width: 700px;
+     
+      background-color:  rgba(255, 255, 255, 0);
+      border-radius: 5px;
+      box-shadow: 0 5px 15px 1px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      
+  }
+  
+  .card1-profil:before{
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 270px;
+      top: 0;
+      left: 0;
+      background-image: linear-gradient(to top, rgba(130, 147, 223, 0.2), rgba(100, 136, 243, 0.726));
+      clip-path: circle(400px at 50% -48.5%);
+  }
+  
+  .header2-profil{
+      position: relative;
+      height: 265px;
+  }
+  
+  
+  
+  
+  
+  .hamburger-menu{
+      position: absolute;
+      width: 21px;
+      height: 16px;
+      top: 1.4rem;
+      left: 1.9rem;
+      z-index: 3;
+      cursor: pointer;
+      transition: .3s;
+      opacity: .8;
+  }
+  
+  .hamburger-menu:hover{
+      opacity: 1;
+  }
+  
+  .hamburger-menu .center{
+      position: absolute;
+      height: 2px;
+      width: 70%;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: #fff;
+      border-radius: 1px;
+  }
+  
+  .hamburger-menu:before, .hamburger-menu:after{
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      border-radius: 1px;
+      background-color: #fff;
+  }
+  
+  .hamburger-menu:before{
+      top: 0;
+  }
+  
+  .hamburger-menu:after{
+      bottom: 0;
+  }
+  
+  .main-pro{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .main-pro .image-profil{
+      position: relative;
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      background: url('ily.png') no-repeat center / cover;
+      
+     
+      margin-bottom: 2px;
+      overflow: hidden;
+      cursor: pointer;
+  }
+  
+  .image-profil .hover{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: rgba(79, 172, 254, .7);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      transition: .5s;
+      opacity: 0;
+  }
+  
+  .image-profil:hover .hover{
+      opacity: 1;
+  }
+  
+  .hover.active{
+      opacity: 1;
+  }
+  
+  .name-gr{
+      font-size: 2rem;
+      color: #fff;
+      font-weight: 500;
+      line-height: 1;
+      margin: 5px 0;
+  }
+  
+  .sub-name{
+      font-family: 'Cutive Mono', monospace;
+      font-size: 1.2rem;
+      opacity: .8;
+      color: #fff;
+  }
+  
+  .content1-profil{
+      display: flex;
+      padding: 1.7rem 2.5rem 2.6rem 2.5rem;
+  }
+  
+  .right{
+      padding-top: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      text-align: right;
+      align-items: flex-end;
+      justify-content: space-between;
+      margin-left: 2.1rem;
+  }
+  
+  .number{
+      font-size: 2.1rem;
+      font-weight: 200;
+      color: #4a47f5;
+      line-height: 1.2;
+  }
+  
+  .number-title-profil{
+      font-size: .55rem;
+      color: #3b14ca;
+      font-weight: 400;
+      line-height: 1;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+  }
+  
+  .title-profil{
+      position: relative;
+      color: #555555;
+      font-weight: 500;
+      font-size: 1.7rem;
+      padding: 0 0 3px 0;
+      margin-bottom: .9rem;
+      display: inline-block;
+      font-style: italic;
+  }
+  
+  .title-profil:after{
+      content: '';
+      position: absolute;
+      height: 3px;
+      width: 25%;
+      background-color: rgba(55, 74, 238, 0.623);
+      bottom: 0;
+      left: 0;
+  }
+  .Information-pro {
+      display: flex;
+      flex-wrap: wrap;
+  }
+  
+  .info {
+      display: flex;
+      align-items: center;
+      margin-right: 18px;
+      margin-bottom: 20px;
+  }
+  
+  .info p {
+      margin-left: 10px;
+      font-size: 15px;
+      font-style: oblique;
+    color: #555555ad;
+  }
+  
+  .info img {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+  }
+  .info i{
+  
+      color: #999797;
+      font-size: 1.3rem;
+      text-decoration: none;
+      margin-right: 8px;
+      transition: .3s;
+  
+  }
+  
+  
+  
+  
+  
+  .modal{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.8);
+      z-index: -1;
+      opacity: 0;
+      transition: .5s;
+  }
+  
+  .modal img{
+      position: absolute;
+      top: 25%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(.3);
+      max-width: 100%;
+      max-height: 100%;
+      transition: .5s;
+  }
+  
+  .modal.show{
+      opacity: 1;
+      z-index: 99;
+  }
+  
+  .modal.show img{
+      top: 50%;
+      transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .close{
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+      transition: .3s;
+  }
+  
+  .close:hover{
+      opacity: .5;
+  }
+  
+  .close:before, .close:after{
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      border-radius: 1.5px;
+      top: 50%;
+      left: 50%;
+      background-color: #fff;
+  }
+  
+  .close:before{
+      transform: translate(-50%, -50%) rotate(45deg);
+  }
+  
+  .close:after{
+      transform: translate(-50%, -50%) rotate(135deg);
+  }
+  
+  .update-wrap  .update{
+      
+      width: 60%;
+      position: relative;
+      padding: 10px 20px;
+      border: 0;
+      background: linear-gradient(to left,   rgba(179, 191, 247, 0.411),   rgba(66, 83, 235, 0.664)  );
+      color: #fff;
+      
+      text-decoration: none;
+      transition: background-color 0.3s ease-in-out;
+      box-shadow: 0 .1rem .2rem #0002;
+      border-radius: 15px;
+      cursor: pointer;
+      
+      
+  
+  }
+  .update-wrap  .update:hover{
+      width: 63%;
+      background: linear-gradient(to left,   rgba(93, 142, 161, 0.411),   rgba(88, 58, 199, 0.664)  );
+  }
+  
+  .update-wrap{
+      display: flex;
+      margin-top: 10px;
+      justify-content: center;
+  
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  @media screen and (max-width: 768px) {
+    .card1-profil{
+    width: 90%;
+    }
+    .header2-profil{
+    height: 200px;
+    }
+    .hamburger-menu{
+    top: 1rem;
+    left: 1.5rem;
+    }
+    .main-pro .image-profil{
+    width: 90px;
+    height: 90px;
+    }
+    .name-gr{
+    font-size: 1rem;
+    }
+    .sub-name{
+    font-size: 1rem;
+    }
+    .content1-profil{
+    flex-direction: column;
+    padding: 1.7rem 1.5rem 2.6rem 1.5rem;
+    }
+    .right{
+    margin-left: 0;
+    margin-top: 1.5rem;
+    text-align: center;
+    align-items: center;
+    }
+    .number{
+    font-size: 2rem;
+    }
+    .number-title-profil{
+    font-size: .5rem;
+    }
+    .Information-pro{
+    justify-content: center;
+    }
+    .info{
+    margin-right: 10px;
+    margin-bottom: 20px;
+    }
+    .info p{
+    font-size: 14px;
+    }
+    .info img{
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+    }
+    .title-profil{
+    font-size: 1rem;
+    }
+    .title-profil:after{
+    height: 2px;
+    width: 20%;
+    }
+    }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  
+   
+  
+  .edit-profile {
+    display: none;
+    position: absolute;
+   
+    width: 65%;
+    background:rgba(255, 255, 255, 0);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin-left: 9.5cm;
+  
+    
+    
+  }
+  .edit-profile .uppro{
+    font-size: 2rem;
+    color: #5a5959;
+    font-weight: 600;
+    text-align: center;
+    
+  }
+  .edit-profile .formulepr{
+    margin-top: 30px;
+  }
+  .formulepr .inputform-pro{
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  
+  .inputform-pro label{
+    color: #333333b9;
+    font-size: 1.6rem;
+  }
+  .formulepr :where(.inputform-pro input) {
+    position: relative;
+    height: 35px;
+    width: 80%;
+    outline: none;
+    font-size: 1.5rem;
+    color: #707070;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0 15px;
+  }
+  
+  .buttonsform button{
+    width: 30%;
+      position: relative;
+      padding: 10px 20px;
+      border: 0;
+      background: linear-gradient(to left,   rgba(135, 137, 238, 0.411),   rgba(58, 37, 243, 0.664)  );
+      color: #fff;
+      
+      text-decoration: none;
+      transition: background-color 0.3s ease-in-out;
+      box-shadow: 0 .1rem .2rem #0002;
+      border-radius: 15px;
+      cursor: pointer;
+    margin-left: 2cm;
+    margin-top: 1cm;
+    margin-bottom: 0.2cm;
+      
+  }
+  .buttonsform button:hover{
+  
+    width: 33%;
+      background: linear-gradient(to left,   rgba(93, 142, 161, 0.411),   rgba(88, 58, 199, 0.664)  );
+  
+  }
+  
+  
+  
+  .inputform-pro input:focus {
+    box-shadow: 0 1px 0 rgba(139, 138, 138, 0.1);
+    
+  }
+  .formulepr .column-pro {
+    display: flex;
+    column-gap: 15px;
+  }
+  
+  
+  
+  .edit-profile .buttons {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .edit-profile .buttons button {
+    margin-left: 10px;
+  }
+  .inputform-pro input[type="file"] {
+      display: none;
+    }
+    
+    /* Style the custom file input button */
+    .inputform-pro input[type="file"] + label {
+      display: inline-block;
+      padding: 7.5px 28px;
+      background-color: #6484ee79;
+      color: #333;
+      border: solid 1px #5555552a;
+      border-radius: 6px;
+      box-shadow: 0 .1rem .2rem rgba(124, 124, 124, 0.133);
+      cursor: pointer;
+      margin-top: 0.2cm;
+    }
+    
+    /* Change the label text when a file is selected */
+    .inputform-pro input[type="file"]:not(:empty) + label:before {
+      content: "File selected: " attr(value);
+      font-style: italic;
+    }
+    
+    /* Optionally, style the file name display */
+    .inputform-pro input[type="file"]:not(:empty) + label:after {
+      content: "\f15b"; /* FontAwesome icon for file */
+      font-family: FontAwesome;
+      margin-left: 10px;
+    }
+    
+    @media screen and (max-width: 768px) {
+      .edit-profile {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+      margin-top: 50px;
+      padding: 20px;
+      }
+      
+      .edit-profile .uppro{
+      font-size: 1.6rem;
+      }
+      
+      .formulepr :where(.inputform-pro input) {
+      width: 100%;
+      }
+      
+      .buttonsform button {
+      width: 100%;
+      margin-left: 0;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      }
+      }
