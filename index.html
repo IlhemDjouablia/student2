@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/table.css">
+    <link rel="stylesheet" href="css/company.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/profil.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Boxicons -->
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
+     <!-- Fontawesome icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <title> Dashboard</title>
+</head>
+
+<body>
+    <div class="container" id="top">
+        <aside class="sidebar-wrapper">
+            <div class="sidebar-header">
+                <img src="img/logo-icon.png" alt="Logo">
+                <h4>Staget</h4>
+                <div class="close-menu">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li class="active"><a href="#home">
+                            <i class="fas fa-home"></i>
+                            <div class="title">Home  </div>
+                           
+                        </a></li>
+                    <li><a href="#internship">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                            <div class="title">internship Request</div>
+                        </a></li>
+                    <li><a href="#Request">
+                            <i class="fas fa-tasks"></i>
+                            <div class="title"> list of Request</div>
+                        </a></li>
+                        <li><a href="#List">
+                            <i class="fa-solid fa-building"></i>
+                                <div class="title">Internship list</div>
+                            </a></li>
+                    <li><a href="#offers">
+                        <i class="fa-solid fa-clone"></i>
+                            <div class="title">offers</div>
+                        </a></li>
+                    <li><a href="#message">
+                        <i class="fa-solid fa-building"></i>
+                            <div class="title">contact</div>
+                        </a></li>
+                    
+                    
+                </ul>
+            </nav>
+        </aside>
+        <main class="content">
+            <header>
+                <div class="header-wrapper">
+                    <div class="header-left">
+                        <div class="toggle-icon">
+                            <i class="fas fa-bars"></i>
+                        </div>
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search...">
+                    </div>
+                    <div class="header-right">
+                        
+                     <div class="dropdown">
+                        <div class="star-container bell">
+                            <i class='bx bx-bell'></i>
+                        </div>
+                        <div class="dropdown-content">
+                            <div class="notification">
+                                <img src="img/profile.png" alt="avatar">
+                                <div class="notification-text">
+                                    <p>You have a new notification!</p>
+                                    <span>2 minutes ago</span>
+                                </div>
+                            </div>
+                            <div class="notification">
+                                <img src="img/profile.png" alt="avatar">
+                                <div class="notification-text">
+                                    <p>You have another notification!</p>
+                                    <span>5 minutes ago</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        
+                        <div class="star-container chat">
+                            <i class='bx bx-message-detail'></i>
+                        </div>
+                       <div class="action">
+                        <div class="" onclick="menuToggle();">
+                          <img src="./assets/avatar.jpg" />
+                        </div>
+                        <div class="dropdown-menu4">
+                          <h3>djouablia ilheme<br /><span>"@student"</span></h3>
+                          <ul>
+                            <li>
+                                <i class='bx bxs-user-account'></i><a href="#profil">My profile</a>
+                            </li>
+                            <li>
+                                <i class='bx bx-lock-alt'></i><a href="#">security</a>
+                            </li>
+                            
+                            <li>
+                                <i class='bx bx-log-out-circle'></i><a href="#">Log out</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+            </header>
+            <section class="main">
+                <section id="home">
+                 
+                    <div class="box-cont">
+  <div class="box-home">
+
+   <div class="image-home">
+<img src="img/profile.png">
+
+   </div> 
+   <div class="content-home">
+    <h3 class="title-home"><i class="fa-thin fa-hand-wave"></i>hello <span style="color: rgb(96, 106, 247);"> Djouablia ilheme</span></h3>
+    <span class="post">@student</span>
+    <span class="text-home">Welcome to your student dashboard. Here, you can track the status of your internship applications in real-time, browse available internship offers, communicate with recruiters, and access helpful resources to optimize your application.</span>
+    <button class="btn-home"> view profil</button>
+  </div>
+   </div>
+   
+</div>
+
+<div class="wrapper-home">
+    
+    <div class="container-home">
+        <i class='bx bxs-bx bxs-user-pin solid' ></i>
+      <span class="num" data-val="350">000</span>
+      <span class="text">internship</span>
+    </div>
+    <div class="container-home">
+        <i class='bx bxs-send solide' ></i>
+      <span class="num" data-val="250">000</span>
+      <span class="text">Request</span>
+    </div>
+    <div class="container-home">
+        <i class='bx bxs-building'></i>
+      <span class="num" data-val="25">000</span>
+      <span class="text">Company</span>
+    </div>
+    
+
+ 
+                </section>
+
+
+
+               <section id="internship">
+
+                <div class="containerform">
+                    <header>Internship form</header>
+            
+                    <form action="#">
+                        <div class="form1 first">
+                            
+                            <div class="details ID">
+                                <span class="titleform">information relating to the establishment:
+                                     </span>
+                                     <div class="select-menuinst">
+                                        <div class="selectinst">
+                                          <span>Select instution</span>
+                                          <i class='bx bxs-chevron-down'></i>
+                                        </div>
+                                        <div class="options-list">
+                                          <div class="option">create instution</div>
+                                          <div class="option">1</div>
+                                          <div class="option">2</div>
+                                          <div class="option">3</div>
+                                          <div class="option">4</div>
+                                          <div class="option">5</div>
+                                          <div class="option">6</div>
+                                        </div>
+                                      </div>
+                                      <div class="fieldsform">
+                        
+
+                                        <div class="input-fieldform">
+                                            <label>Name</label>
+                                            <input type="text" placeholder="Enter  the name  of isntution  " required>
+                                        </div>
+                
+                                        <div class="input-fieldform">
+                                            <label> Address</label>
+                                            <input type="text" placeholder="Enter establishment Address" required>
+                                        </div>
+                
+                                        <div class="input-fieldform">
+                                            <label>phone number</label>
+                                            <input type="text" placeholder="Enter establishment phone " required>
+                                        </div>
+                
+                                        <div class="input-fieldform">
+                                            <label>EMAIL</label>
+                                            <input type="email" placeholder="Enter establishment EMAIL" required>
+                                        </div>
+                
+                                        <div class="input-fieldform">
+                                            <label>Internship manager</label>
+                                            <input type="text" placeholder="Enter Internship manager " required>
+                                        </div>
+                                        <div class="input-fieldform">
+                                            <label> Contact details</label>
+                                            <input type="text" placeholder="Enter Contact details" required>
+                                        </div>
+                                      </div>
+                                            <span class="titleform">Internship information</span>
+                        
+                                            <div class="fieldsform">
+                                                <div class="input-fieldform">
+                                                    <label>Duration  of the course</label>
+                                                    <input type="number" placeholder="" required>
+                                                </div>
+                        
+                                                <div class="input-fieldform">
+                                                    <label>starting date</label>
+                                                    <input type="date" placeholder="of " required>
+                                                </div>
+                        
+                                                <div class="input-fieldform">
+                                                    <label>  finishing date </label>
+                                                    <input type="date" placeholder="to" required>
+                                                </div>
+                        
+                                                <div class="input-fieldform">
+                                                    <label>work plan</label>
+                                                    <input type="text" placeholder="Enter your district" required>
+                                                </div>
+                        
+                                                
+                                            </div>
+                                       
+                        
+                                        
+                                        <div class="buttonsform1">
+                                          <button class="backBtnform">
+                                              <i class="uil uil-navigator"></i>
+                                              <span class="btnText">Back</span>
+                                          </button>
+                                          
+                                          <button class="sumbitform">
+                                              <span class="btnTextform">send</span>
+                                              <i class="uil uil-navigator"></i>
+                                          </button>
+                                      </div>
+                                </div> 
+                            </div>
+                        </form>
+                    </div>
+
+
+
+
+
+               </section>
+                
+
+<section id="Request">
+       
+    <div class="table__header">
+        <h1>Internship Request</h1>
+        <div class="input-group">
+            
+            <input type="search" placeholder="Search Data...">
+            <i class="ri-search-2-line"></i>
+        </div>
+        <div class="creatinern">
+            <button id="create-btn">create Internship Request</button>
+
+        </div>
+    </div>
+
+
+        <div class="table__body">
+            <table>
+                <thead>
+                    <tr class="score-card themecar ">
+                        <th> Id <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> Internship <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> company <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> supervisor <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> status<span class="icon-arrow">&UpArrow;</span></th>
+                        <th> action <span class="icon-arrow">&UpArrow;</span></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="score-card">
+                        <td> 1 </td>
+                        <td> web</td>
+                        <td> google</td>
+                        <td>wissam bouarouj</td>
+                        <td><span>   </span></td>
+                        
+                        <td> <div  class="action"> <i class="ri-eye-line"></i></div> 
+                             
+                            <div  class="action" style="color: red;"> <i class='bx bx-trash'></i></div></td>
+                    </tr>
+                    <tr class="score-card">
+                        <td> 2 </td>
+                        <td>mobile </td>
+                        <td> apple</td>
+                        <td>
+                            seghiri akram
+                        </td>
+                        <td></td>
+                        
+                        <td> <div  class="action"> <i class="ri-eye-line"></i></div> 
+                            
+                            <div  class="action"  style="color: red;"><i class='bx bx-trash'></i></div></td>
+                    </tr>
+                    <tr class="score-card">
+                        <td> 3</td>
+                        <td></td>
+                        <td>  </td>
+                        <td>
+                           
+                         </td>
+                        <td></td>
+                        
+                        <td> <div  class="action"> <i class="ri-eye-line"></i></div> 
+                            
+                            <div  class="action"  style="color: red;"> <i class='bx bx-trash'></i></div></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    
+
+    
+
+
+
+
+</section>
+
+
+<section id="offers">
+    <div class="a-container">
+        <h1 style="text-align:center;">Internship Offers</h1>
+        <div class="box-search">
+         <input type="checkbox" id="check">
+         <div class="search-box2">
+           <input type="text" placeholder="Type here...">
+           <label for="check" class="icon">
+             <i class="fas fa-search"></i>
+           </label>
+         </div>
+       </div>
+        <a href="https://codepen.io/pirolab/project/editor/AyBEvm" target="_blank">show Offers <i class="icon-right"></i></a> 
+        <div class="o-card_container">
+           <div class="o-card" id="Nikola_Tesla">
+              <div class="o-card_header">
+                 <div class="o-card_headerHeroImg"  style=""></div>
+                 <ul class="o-card-headerList">
+                    <li class="o-card-headerList--openIcons ">
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                    </li>
+                    <li class="o-card-headerList--item">
+                       <a class="o-card-headerList--link" href="#"><i class="icon-facebook"></i></a>
+                    </li>
+                    <li class="o-card-headerList--item">
+                       <a class="o-card-headerList--link" href="#"><i class="icon-twitter"></i></a>
+                    </li>
+                    <li class="o-card-headerList--item">
+                       <a class="o-card-headerList--link" href="#"><i class="icon-linkedin"></i></a>
+                    </li>
+                    <li class="o-card-headerList--item">
+                       <a class="o-card-headerList--link" href="#"><i class="icon-github"></i></a>
+                    </li>
+                 </ul>
+                 <div class="o-card_logo" style="background:url(offer1.jpg) center no-repeat;"></div>
+              </div>
+              <div class="o-card_body">
+                 <h2 class="o-card_title">Stage en développement de logiciels</h2>
+                 <h3 class="o-card_subTitle">The Misunderstood</h3>
+                 <p class="o-card_paragraph">Description :
+                    Nous recherchons un(e) stagiaire pour rejoindre notre équipe de développement de logiciels. Vous aurez l'opportunité de travailler sur des projets passionnants et d'acquérir une expérience pratique dans un environnement professionnel.
+                    
+                    Tâches :
+                    
+                    Participer au développement et à la maintenance de logiciels
+                    Travailler en étroite collaboration avec l'équipe de développement pour assurer la qualité et l'efficacité des projets
+                    Participer à la résolution de problèmes et à la mise en œuvre de nouvelles fonctionnalités
+                    Compétences requises :
+                    
+                    Connaissance de langages de programmation tels que Java, Python ou C++
+                    Compétences en résolution de problèmes et en dépannage
+                    Capacité à travailler en équipe et à communiquer efficacement
+                    Durée du stage : 3 à 6 mois
+                    
+                    Si vous êtes intéressé(e) par ce stage, veuillez envoyer votre CV et une lettre de motivation à [adresse email ou lien vers la page de candidature en ligne]
+                 </p>
+              </div>
+              <div class="o-card_footer">
+                 <a data-href="Nikola_Tesla" target="_blank" class="a-readMore" data-modal="#first">Postuler <i class="icon-right"></i></a>
+              </div>
+              <div class="o-modal">
+                 <span class="o-modal__close">
+                 <i class="icon-cancel-circled"></i>
+                 </span>
+                 <h2 class="o-modal__title"></h2>
+                 <div class="o-modal__inner"></div>
+              </div>
+              <div class="a-loader">
+                 <div class="a-loader__bar"></div>
+                 <div class="a-loader__bar"></div>
+                 <div class="a-loader__bar"></div>
+              </div>
+           </div>
+           <div class="o-card" id="Ernest_Hemingway">
+              <div class="o-card_header">
+                 <div class="o-card_headerHeroImg"  data-image=""></div>
+                 <ul class="o-card-headerList">
+                    <li class="o-card-headerList--openIcons ">
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                    </li>
+                    <li class="o-card-headerList--item">
+                       <a class="o-card-headerList--link" href="#"><i class="icon-facebook"></i></a>
+                    </li>
+                    <li class="o-card-headerList--item">
+                       <a class="o-card-headerList--link" href="#"><i class="icon-twitter"></i></a>
+                    </li>
+                    <li class="o-card-headerList--item">
+                       <a class="o-card-headerList--link" href="#"><i class="icon-linkedin"></i></a>
+                    </li>
+                    <li class="o-card-headerList--item">
+                       <a class="o-card-headerList--link" href="#"><i class="icon-github"></i></a>
+                    </li>
+                 </ul>
+                 <div class="o-card_logo" style="background:url(offer2.jpeg) center no-repeat;"></div>
+              </div>
+              <div class="o-card_body">
+                 <h2 class="o-card_title">Stage en administration système</h2>
+                 <h3 class="o-card_subTitle">The Brave</h3>
+                 <p class="o-card_paragraph"> Description :
+                    Nous recherchons un(e) stagiaire pour rejoindre notre équipe d'administration système. Vous aurez l'opportunité de travailler sur des projets passionnants et d'acquérir une expérience pratique dans un environnement professionnel.
+                    
+                    Tâches :
+                    
+                    Participer à la configuration et à la maintenance des serveurs
+                    Travailler en étroite collaboration avec l'équipe d'administration système pour assurer la qualité et l'efficacité des projets
+                    Participer à la résolution de problèmes et à la mise en place de nouvelles solutions
+                    Compétences requises :
+                    
+                    Connaissance des systèmes d'exploitation tels que Windows ou Linux
+                    Compétences en résolution de problèmes et en dépannage
+                    Capacité à travailler en équipe et à communiquer efficacement
+                    Durée du stage : 3 à 6 mois
+                    
+                    Si vous êtes intéressé(e) par ce stage, veuillez envoyer votre CV et une lettre de motivation à [adresse email ou lien vers la page de candidature en ligne]</p>
+              </div>
+              <div class="o-card_footer">
+                 <a data-href="Ernest_Hemingway" target="_blank" class="a-readMore" data-modal="#first">Postuler <i class="icon-right"></i></a>
+              </div>
+              <div class="o-modal">
+                 <span class="o-modal__close">
+                 <i class="icon-cancel-circled"></i>
+                 </span>
+                 <h2 class="o-modal__title"></h2>
+                 <div class="o-modal__inner"></div>
+              </div>
+              <div class="a-loader">
+                 <div class="a-loader__bar"></div>
+                 <div class="a-loader__bar"></div>
+                 <div class="a-loader__bar"></div>
+              </div>
+           </div>
+           <div class="o-card" id="J_R_R_Tolkien">
+              <div class="o-card_header">
+                 <div class="o-card_headerHeroImg"  data-image="FLutter-1.png"></div>
+                 <ul class="o-card-headerList">
+                    <li class="o-card-headerList--openIcons ">
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                    </li>
+                    <li class="o-card-headerList--item">
+                       <a class="o-card-headerList--link" href="#"><i class="icon-facebook"></i></a>
+                    </li>
+                    <li class="o-card-headerList--item">
+                       <a class="o-card-headerList--link" href="#"><i class="icon-twitter"></i></a>
+                    </li>
+                    <li class="o-card-headerList--item">
+                       <a class="o-card-headerList--link" href="#"><i class="icon-linkedin"></i></a>
+                    </li>
+                    <li class="o-card-headerList--item">
+                       <a class="o-card-headerList--link" href="#"><i class="icon-github"></i></a>
+                    </li>
+                 </ul>
+                 <div class="o-card_logo" style="background:url(flutter_logo.png) center no-repeat;"></div>
+              </div>
+              <div class="o-card_body">
+                 <h2 class="o-card_title">Stage en développement d'applications mobiles</h2>
+                 <h3 class="o-card_subTitle">The Visionary</h3>
+                 <p class="o-card_paragraph">Description :
+                    Nous sommes à la recherche d'un stagiaire pour rejoindre notre équipe de développement d'applications mobiles. Au cours de ce stage, vous travaillerez sur la création d'applications mobiles pour iOS et/ou Android.
+                    
+                    Tâches :
+                    
+                    Participer à la conception et au développement d'applications mobiles pour iOS et/ou Android
+                    Contribuer à la résolution de problèmes et à la mise en place de nouvelles fonctionnalités
+                    Travailler en étroite collaboration avec l'équipe de développement pour garantir la qualité et l'efficacité des projets
+                    Compétences requises :
+                    
+                    Connaissance de Swift pour le développement d'applications iOS et/ou Java pour le développement d'applications Android
+                    Compétences en résolution de flutter et problèmes et en dépannage
+                    Capacité à travailler en équipe et à communiquer efficacement
+                    Durée du stage : 3 à 6 mois
+                    
+                    Si vous êtes intéressé(e) par ce stage, veuillez envoyer votre CV et une lettre de motivation à [adresse email ou lien vers la page de candidature en ligne].
+                 </p>
+              </div>
+              <div class="o-card_footer">
+                 <a data-href="J._R._R._Tolkien" target="_blank" class="a-readMore" data-modal="#first">Postuler <i class="icon-right"></i></a>
+              </div>
+              <div class="o-modal">
+                 <span class="o-modal__close">
+                 <i class="icon-cancel-circled"></i>
+                 </span>
+                 <h2 class="o-modal__title"></h2>
+                 <div class="o-modal__inner"></div>
+              </div>
+              <div class="a-loader">
+                 <div class="a-loader__bar"></div>
+                 <div class="a-loader__bar"></div>
+                 <div class="a-loader__bar"></div>
+              </div>
+           </div>
+           <div class="o-card" id="Malcolm_X">
+              <div class="o-card_header">
+                 <div class="o-card_headerHeroImg"  data-image=""></div>
+                 <ul class="o-card-headerList">
+                    <li class="o-card-headerList--openIcons ">
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                    </li>
+                    <li class="o-card-headerList--item">
+                       <a class="o-card-headerList--link" href="#"><i class="icon-facebook"></i></a>
+                    </li>
+                    <li class="o-card-headerList--item">
+                       <a class="o-card-headerList--link" href="#"><i class="icon-twitter"></i></a>
+                    </li>
+                    <li class="o-card-headerList--item">
+                       <a class="o-card-headerList--link" href="#"><i class="icon-linkedin"></i></a>
+                    </li>
+                    <li class="o-card-headerList--item">
+                       <a class="o-card-headerList--link" href="#"><i class="icon-github"></i></a>
+                    </li>
+                 </ul>
+                 <div class="o-card_logo" style="background:url(analysis.jpeg) center no-repeat;"></div>
+              </div>
+              <div class="o-card_body">
+                 <h2 class="o-card_title">Stage en analyse de données</h2>
+                 <h3 class="o-card_subTitle">The Necessary</h3>
+                 <p class="o-card_paragraph">Description :
+                    Nous recherchons un(e) stagiaire pour rejoindre notre équipe d'analyse de données. Vous aurez l'opportunité de travailler sur des projets passionnants et d'acquérir une expérience pratique dans un environnement professionnel.
+                    
+                    Tâches :
+                    
+                    Participer à l'analyse de données pour des projets d'entreprise
+                    Travailler en étroite collaboration avec l'équipe d'analyse de données pour assurer la qualité et l'efficacité des projets
+                    Participer à la résolution de problèmes et à la mise en place de nouvelles solutions
+                    Compétences requises :
+                    
+                    Connaissance de langages de programmation tels que Python ou R
+                    Compétences en résolution de problèmes et en dépannage
+                    Capacité à travailler en équipe et à communiquer efficacement
+                    Durée du stage : 3 à 6 mois
+                    
+                    Si vous êtes intéressé(e) par ce stage, veuillez envoyer votre CV et une lettre de motivation à [adresse email ou lien vers la page de candidature en</p>
+              </div>
+              <div class="o-card_footer">
+                 <a data-href="Malcolm_X" target="_blank" class="a-readMore" data-modal="#first">Postuler <i class="icon-right"></i></a>
+              </div>
+              <div class="o-modal">
+                 <span class="o-modal__close">
+                 <i class="icon-cancel-circled"></i>
+                 </span>
+                 <h2 class="o-modal__title"></h2>
+                 <div class="o-modal__inner"></div>
+              </div>
+              <div class="a-loader">
+                 <div class="a-loader__bar"></div>
+                 <div class="a-loader__bar"></div>
+                 <div class="a-loader__bar"></div>
+              </div>
+           </div>
+           <div class="o-card" id="George_Orwell">
+              <div class="o-card_header">
+                 <div class="o-card_headerHeroImg"  data-image=""></div>
+                 <ul class="o-card-headerList">
+                    <li class="o-card-headerList--openIcons ">
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                    </li>
+                    <li class="o-card-headerList--item">
+                       <a class="o-card-headerList--link" href="#"><i class="icon-facebook"></i></a>
+                    </li>
+                    <li class="o-card-headerList--item">
+                       <a class="o-card-headerList--link" href="#"><i class="icon-twitter"></i></a>
+                    </li>
+                    <li class="o-card-headerList--item">
+                       <a class="o-card-headerList--link" href="#"><i class="icon-linkedin"></i></a>
+                    </li>
+                    <li class="o-card-headerList--item">
+                       <a class="o-card-headerList--link" href="#"><i class="icon-github"></i></a>
+                    </li>
+                 </ul>
+                 <div class="o-card_logo" style="background:url(web.png) center no-repeat;"></div>
+              </div>
+              <div class="o-card_body">
+                 <h2 class="o-card_title">Stage en développement d'applications web</h2>
+                 <h3 class="o-card_subTitle">The Warrior</h3>
+                 <p class="o-card_paragraph">Description :
+                    Nous recherchons un(e) stagiaire pour rejoindre notre équipe de développement d'applications web. Vous aurez l'opportunité de travailler sur des projets passionnants et de contribuer à la création d'applications mobiles innovantes.
+                    
+                    Tâches :
+                    
+                    Participer au développement d'applications web 
+                    Travailler en étroite collaboration avec l'équipe de développement pour assurer la qualité et l'efficacité des projets
+                    Participer à la résolution de problèmes et à la mise en œuvre de nouvelles fonctionnalités
+                    Compétences requises :
+                    
+                    Connaissance de html css javascript  pour le développement d'applications web
+                    Compétences en résolution de problèmes et en dépannage
+                    Capacité à travailler en équipe et à communiquer efficacement
+                    Durée du stage : 3 à 6 mois
+                    
+                    Si vous êtes intéressé(e) par ce stage, veuillez envoyer votre CV et une lettre de motivation à [adresse email ou lien vers la page de candidature en ligne]
+                 </p>
+              </div>
+              <div class="o-card_footer">
+                 <a data-href="George_Orwell" target="_blank" class="a-readMore" data-modal="#first">postuler <i class="icon-right"></i></a>
+              </div>
+              <div class="o-modal">
+                 <span class="o-modal__close">
+                 <i class="icon-cancel-circled"></i>
+                 </span>
+                 <h2 class="o-modal__title"></h2>
+                 <div class="o-modal__inner"></div>
+              </div>
+              <div class="a-loader">
+                 <div class="a-loader__bar"></div>
+                 <div class="a-loader__bar"></div>
+                 <div class="a-loader__bar"></div>
+              </div>
+           </div>
+           <div class="o-card" id="Albert_Einstein">
+              <div class="o-card_header">
+                 <div class="o-card_headerHeroImg"  data-image=""></div>
+                 <ul class="o-card-headerList">
+                    <li class="o-card-headerList--openIcons ">
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                    </li>
+                    <li class="o-card-headerList--item">
+                       <a class="o-card-headerList--link" href="#"><i class="icon-facebook"></i></a>
+                    </li>
+                    <li class="o-card-headerList--item">
+                       <a class="o-card-headerList--link" href="#"><i class="icon-twitter"></i></a>
+                    </li>
+                    <li class="o-card-headerList--item">
+                       <a class="o-card-headerList--link" href="#"><i class="icon-linkedin"></i></a>
+                    </li>
+                    <li class="o-card-headerList--item">
+                       <a class="o-card-headerList--link" href="#"><i class="icon-github"></i></a>
+                    </li>
+                 </ul>
+                 <div class="o-card_logo" style="background:url(scrur.jpeg) center no-repeat;"></div>
+              </div>
+              <div class="o-card_body">
+                 <h2 class="o-card_title">Stage en sécurité informatique</h2>
+                 <h3 class="o-card_subTitle">The forerunner</h3>
+                 <p class="o-card_paragraph">Description :
+                    Nous recherchons un(e) stagiaire pour rejoindre notre équipe de sécurité informatique. Vous aurez l'opportunité de travailler sur des projets passionnants et de contribuer à la sécurité de nos systèmes informatiques.
+                    
+                    Tâches :
+                    
+                    Participer à la surveillance et à l'analyse des menaces de sécurité informatique
+                    Travailler en étroite collaboration avec l'équipe de sécurité pour améliorer la sécurité de nos systèmes informatiques
+                    Participer à la résolution de problèmes et à la mise en place de nouvelles solutions de sécurité
+                    Compétences requises :
+                    
+                    Connaissance des principes de base de la sécurité informatique
+                    Compétences en résolution de problèmes et en dépannage
+                    Capacité à travailler en équipe et à communiquer efficacement
+                    Durée du stage : 3 à 6 mois
+                    
+                    Si vous êtes intéressé(e) par ce stage, veuillez envoyer votre CV et une lettre de motivation à [adresse email ou lien vers la page de candidature en ligne]</p>
+              </div>
+              <div class="o-card_footer">
+                 <a data-href="Albert_Einstein" target="_blank" class="a-readMore" data-modal="#first">postuler <i class="icon-right"></i></a>
+              </div>
+              <div class="o-modal">
+                 <span class="o-modal__close">
+                 <i class="icon-cancel-circled"></i>
+                 </span>
+                 <h2 class="o-modal__title"></h2>
+                 <div class="o-modal__inner"></div>
+              </div>
+              <div class="a-loader">
+                 <div class="a-loader__bar"></div>
+                 <div class="a-loader__bar"></div>
+                 <div class="a-loader__bar"></div>
+              </div>
+           </div>
+        </div>
+     </div>
+</section>
+
+
+<section id="company" >
+   
+
+   <div class="container-company">
+      
+      <h1>Company</h1>
+      <div class="row-company">
+      <div class="box-company">
+      <img src="a7e51f1c9374e35b2d2381aa5b44f2a3_M.jpg">
+      <h2>mobilis</h2>
+      <h4>contact</h4>
+      <h5>+614 382 442</h5>
+      <h6>Luke@panels.io</h6>
+      <div class="icon">
+      <ion-icon name="logo-facebook"></ion-icon>
+      <ion-icon name="logo-twitter"></ion-icon>
+      <ion-icon name="logo-instagram"></ion-icon>
+      <ion-icon name="logo-linkedin"></ion-icon>
+      </div>
+      </div>
+      <div class="box-company">
+      <img src="téléchargement.jpeg">
+      <h2>djezzy</h2>
+      
+      <div class="icon">
+      <ion-icon name="logo-facebook"></ion-icon>
+      <ion-icon name="mail-outline"></ion-icon>
+      <ion-icon name="call-outline"></ion-icon>
+      <ion-icon name="link-outline"></ion-icon>
+      </div>
+      <button class="btn-company">offers</button>
+      </div>
+      <div class="box-company">
+      <img src="white-1Artboard-272-100.jpg">
+      <h2>ooredoo</h2>
+      <h4>contact:</h4>
+      <h5>+614 382 442</h5>
+      <h6>Cass@panels.io</h6>
+      <div class="icon">
+      <ion-icon name="logo-facebook"></ion-icon>
+      <ion-icon name="logo-twitter"></ion-icon>
+      <ion-icon name="logo-instagram"></ion-icon>
+      <ion-icon name="logo-linkedin"></ion-icon>
+      </div>
+      </div>
+      </div>
+      </div>
+
+</section>
+
+<section id="profil">
+
+   <div class="profile">
+      <div class="modal">
+        <img src="ily.png" alt="">
+        <div class="close"></div>
+    </div>
+    
+    <div class="container-profil">
+        <div class="card1-profil">
+            <div class="header2-profil">
+                <div class="hamburger-menu">
+                    <div class="center"></div>
+                </div>
+                
+                <div class="main-pro">
+                    <div class="image-profil">
+                        <div class="hover">
+                            <i class="fas fa-camera fa-2x"></i>
+                        </div>
+                    </div>
+                    <h3 class="name-gr">nouara redouane</h3>
+                    <h3 class="sub-name">@head of department</h3>
+                </div>
+            </div>
+  
+            <div class="content1-profil">
+                <div class="left">
+                    <div class="about-container">
+                        <h3 class="title-profil">Information: </h3>
+            <div class="Information-pro">
+                        <span class="info"><i class="ri-calendar-2-line"></i> <p>date of brth:23/06/1980</p></span>
+            <span class="info"> <i class="ri-mail-line"></i> <p>email:nouararedouanne@univ-constantine2.dz</p></span>
+            <span class="info">  <img src="univ.png"><p>university:Constantine2 Abdelhamid Mehri</p></span>
+            <span class="info" ><img src="ntic.png"> <p>faculty:NTIC</p></span>
+            <span class="info"><img src="ifa.png"> <p>department:IFA</p></span>
+  
+          </div>
+  
+                    </div>
+                    
+                   
+                        <div class="update-wrap">
+                           <button class="update" id="edit-profile-btn">Update</button>
+                        </div>
+                        
+                </div>
+  
+                
+                </div>
+            </div>
+        </div>
+    </div>
+  
+  
+  
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    </div>
+    </div>
+    
+    <div class="edit-profile hidden">
+      <header class="uppro">update profil</header>
+  
+      <form class="formulepr">
+        <div class="column-pro">
+        <div class="inputform-pro">
+          <label for="">profile picture:</label><br>
+    <input type="file" id="profile-picture" name="profile-picture">
+    <label for="profile-picture">Choose a profile picture</label>
+  </div>
+        
+        <div class="inputform-pro">
+        <label for="first-name">Full Name :</label><br>
+        <input type="text" id="first-name"></div></div>
+        <div class="column-pro">
+        <div class="inputform-pro">
+        <label for="last-name"> Titls:</label><br>
+        <input type="text" id="last-name"></div>
+        
+        <div class="inputform-pro">
+        <label for="date-of-birth">date-of-birth :</label><br>
+        <input type="date" id="date-of-birth"></div></div>
+        <div class="column-pro">
+        <div class="inputform-pro">
+        <label for="email">e-mail :</label><br>
+        <input type="email" id="email"></div>
+       
+        <div class="inputform-pro">
+          
+        <label for="university">University :</label><br>
+      
+        <input type="text" id="university"></div></div>
+        <div class="column-pro">
+        <div class="inputform-pro">
+          
+        <label for="faculty">Faculty :</label><br>
+  
+        <input type="text" id="faculty"></div>
+        
+        <div class="inputform-pro">
+        <label for="department">Département :</label><br>
+        
+        <input type="text" id="department"></div></div>
+        <div class="buttonsform">
+          <button type="submit">Enregistrer</button>
+          <button type="button" id="cancel-edit-btn">Annuler</button>
+        </div>
+      </form>
+    </div>
+
+
+
+</section>
+
+
+
+
+
+
+
+                
+            </section>
+            <footer>
+                <div class="copyright">
+                    copyright &copy; 2022. all right reserved.
+                </div>
+            </footer>
+        </main>
+    </div>
+    <div class="switcher-container">
+        <div class="switcher-icon">
+            <i class="fas fa-cog"></i>
+        </div>
+        <div class="switcher-close">
+            <i class="fas fa-times"></i>
+        </div>
+        <div class="switcher-header">
+            <h3>theme customizer</h3>
+            <h4>theme styles</h4>
+        </div>
+        <div class="switcher-body">
+            <ul>
+                <li data-color="#f7f7f7" class="active"></li>
+                <li data-color="#212529"></li>
+            </ul>
+        </div>
+    </div>
+    <a href="#top" class="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+    
+
+
+
+
+   
+    
+
+
+
+
+
+
+
+
+
+
+       
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/cards.js"></script>
+    <script src="https://kit.fontawesome.com/9e5ba2e3f5.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
